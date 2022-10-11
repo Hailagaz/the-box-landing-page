@@ -1,13 +1,15 @@
+@import "_variables.scss";
+
 .header {
 	max-width: 100%;
-	width: 1448px;
+	width: $width_content - 2 * $padding_content;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0 auto;
-	padding: 40px 40px 0;
+	padding-top: 16px;
 	//&__logotype {}
 	//&__menu {}
 	&__icon {
@@ -28,41 +30,15 @@
 		color: #14171F;
 		gap: 50px;
 	}
+	&__list li:last-child {
+		color: #F9995D;
+	}
 	&__link {
 		overflow: hidden;
-	}
-	&__authorize {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 34px;
-	}
-	&__favorite {
-		font-size: 0;
-	}
-	&__user {
-		font-size: 0;
 	}
 	@media screen and (max-width: 767px) {
 		&__logotype {
 			z-index: 5;
-		}
-		&__favorite {
-			font-weight: 600;
-			font-size: 20px;
-			line-height: 27px;
-		}
-		&__user {
-			display: block;
-			font-weight: 600;
-			font-size: 20px;
-			line-height: 27px;
-		}
-		&__favorite img {
-			display: none;
-		}
-		&__user img {
-			display: none;
 		}
 		&__list {
 			flex-direction: column;
@@ -71,10 +47,6 @@
 		&__list li {
 			border-bottom: solid 1px #3559C7;
 		}
-		&__authorize {
-			flex-direction: column;
-		}
-
 		&__icon {
 			z-index: 5;
 			display: block;
@@ -100,7 +72,6 @@
 		&__icon::before {
 			top: 0;
 		}
-
 		&__icon::after {
 			bottom: 0;
 		}

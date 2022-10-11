@@ -1,13 +1,13 @@
 .header {
   max-width: 100%;
-  width: 1448px;
+  width: 1216px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 40px 40px 0;
+  padding-top: 16px;
 }
 .header__icon {
   display: none;
@@ -26,6 +26,9 @@
   padding: 0;
   color: #14171F;
   gap: 50px;
+}
+.header__list li:last-child {
+  color: #F9995D;
 }
 .header__link {
   overflow: hidden;
@@ -271,6 +274,7 @@ body {
   font-weight: 400;
   margin: auto;
   overflow-x: hidden;
+  padding: 0 32px;
 }
 
 body._lock {
