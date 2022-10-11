@@ -8,7 +8,7 @@
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	margin: 0 auto 16px;
 	padding-top: 16px;
 	//&__logotype {}
 	//&__menu {}
@@ -46,6 +46,7 @@
 		}
 		&__list li {
 			border-bottom: solid 1px #3559C7;
+			color: #ffffff;
 		}
 		&__icon {
 			z-index: 5;
