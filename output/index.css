@@ -1,3 +1,159 @@
+.header {
+  max-width: 100%;
+  width: 1448px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 40px 40px 0;
+}
+.header__icon {
+  display: none;
+}
+.header__nav {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.header__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: #14171F;
+  gap: 50px;
+}
+.header__link {
+  overflow: hidden;
+}
+.header__authorize {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 34px;
+}
+.header__favorite {
+  font-size: 0;
+}
+.header__user {
+  font-size: 0;
+}
+@media screen and (max-width: 767px) {
+  .header__logotype {
+    z-index: 5;
+  }
+  .header__favorite {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .header__user {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .header__favorite img {
+    display: none;
+  }
+  .header__user img {
+    display: none;
+  }
+  .header__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header__list li {
+    border-bottom: solid 1px #3559C7;
+  }
+  .header__authorize {
+    flex-direction: column;
+  }
+  .header__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .header__icon span, .header__icon::before, .header__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #3559C7;
+  }
+  .header__icon::before, .header__icon::after {
+    content: "";
+  }
+  .header__icon::before {
+    top: 0;
+  }
+  .header__icon::after {
+    bottom: 0;
+  }
+  .header__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .header__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .header__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .header__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 89, 199, 0.75);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header__nav._active {
+    left: 0;
+  }
+  .header__nav::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    height: 90px;
+    background: linear-gradient(-45deg, #63dd9e, #35aa6e, #177946, #064b27);
+    animation: gradien 5s ease infinite;
+    opacity: 0.8;
+  }
+  .header__nav::before._active {
+    left: 0;
+  }
+}
+
+@keyframes gradien {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .button {
   width: 214px;
   height: 60px;
