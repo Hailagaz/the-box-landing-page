@@ -1,3 +1,34 @@
+@import "_buttons.scss";
+@import "_links.scss";
+@import "_spinner.scss";
+@import "_swiper.scss";
+@import "_text.scss";
+@import "_variables.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+body._lock {
+	overflow: hidden;
+}
+
+main {
+	margin: 0px auto 0px auto;
+	padding: 0;
 }
