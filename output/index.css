@@ -127,9 +127,22 @@
   }
 }
 .hero {
-  height: 100vh;
-  width: 100vw;
-  background: url();
+  height: 646px;
+  background-image: url(images/hero_background.png);
+  background-color: rgba(255, 255, 255, 0.4666666667);
+  background-position: center;
+  position: relative;
+}
+.hero__header {
+  margin-top: 239px;
+  width: 100%;
+  max-width: 556px;
+}
+.hero__feature {
+  position: absolute;
+  width: 100%;
+  max-width: 418px;
+  right: 0;
 }
 .button {
   width: 214px;
