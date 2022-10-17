@@ -310,3 +310,64 @@ main {
   margin: 0px auto 0px auto;
   padding: 0;
 }
+.reasons {
+  margin-top: 100px;
+  margin-bottom: 88px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.reasons__content {
+  margin-top: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.reasons__reason {
+  width: 292px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33.3333333333% - 3rem);
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 40px 40px 20px;
+  min-width: 200px;
+}
+.reasons__reason:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
+  box-shadow: 0 0 15px 5px #f9f9f9;
+}
+.reasons__reason-image {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reasons__reason-head {
+  margin-top: 26px;
+}
+.reasons__reason-head p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+.reasons__reason-descr {
+  margin-top: 19px;
+}
+@media screen and (max-width: 767px) {
+  .reasons__reason {
+    padding: 40px 10px 40px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+}
