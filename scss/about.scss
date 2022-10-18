@@ -1,0 +1,26 @@
+.about {
+	// .about__container
+	&__container {
+		width: 488px;
+		max-width: 100%;
+	}
+	&__container h3 {
+		margin-top: 50px;
+	}
+	&__container p:first-child {
+		margin-top: 35px;
+	}
+	&__container p:nth-child(2) {
+		margin-top: 35px;
+	}
+	// .about__buttons
+	// &__buttons {
+	// }
+	// .about__button
+	&__button {
+		margin-top: 75px;
+		margin-bottom: 60px;
+	}
+}
+.button {
+}
