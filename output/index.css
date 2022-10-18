@@ -1,18 +1,21 @@
+.about__image {
+  position: relative;
+}
 .about__container {
   width: 488px;
   max-width: 100%;
+  padding: 50px 60px 60px 40px;
+  background-color: #2947a9;
+  color: #ffffff;
+  box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+  border-radius: 2px;
 }
-.about__container h3 {
-  margin-top: 50px;
-}
-.about__container p:first-child {
-  margin-top: 35px;
-}
-.about__container p:nth-child(2) {
+.about__container p {
   margin-top: 35px;
 }
 .about__button {
   margin-top: 75px;
+  color: #2947a9;
 }
 .header {
   max-width: 100%;
@@ -206,11 +209,18 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  background-color: #292E3D;
+  background-color: #292e3d;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button-white {
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .button:hover {

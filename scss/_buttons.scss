@@ -4,13 +4,20 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
-	background-color: #292E3D;
+	background-color: #292e3d;
 	//color: #ffffff;
 	//border-radius: 0;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.button-white {
+	background-color: #ffffff;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
 }
 
 .button:hover {

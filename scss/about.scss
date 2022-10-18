@@ -1,26 +1,23 @@
 .about {
+	&__image {
+		position: relative;
+	}
 	// .about__container
 	&__container {
 		width: 488px;
 		max-width: 100%;
+		padding: 50px 60px 60px 40px;
+
+		background-color: #2947a9;
+		color: #ffffff;
+		box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+		border-radius: 2px;
 	}
-	&__container h3 {
-		margin-top: 50px;
-	}
-	&__container p:first-child {
+	&__container p {
 		margin-top: 35px;
 	}
-	&__container p:nth-child(2) {
-		margin-top: 35px;
-	}
-	// .about__buttons
-	// &__buttons {
-	// }
-	// .about__button
 	&__button {
 		margin-top: 75px;
-		margin-bottom: 60px;
+		color: #2947a9;
 	}
-}
-.button {
 }
