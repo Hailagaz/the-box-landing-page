@@ -1,7 +1,7 @@
 .about {
 	width: 1215px;
 	max-width: 100%;
-	margin: 0 auto;
+	margin: 0 auto 200px;
 
 	padding: 0 20px;
 	position: relative;
@@ -53,6 +53,11 @@
 		}
 		&__container {
 			position: initial;
+			width: 902px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 }

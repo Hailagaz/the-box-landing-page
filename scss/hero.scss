@@ -61,4 +61,17 @@
 	&__button {
 		gap: 10px;
 	}
+	@media screen and (max-width: 497px) {
+		margin-bottom: 200px;
+		&__header {
+			text-align: center;
+		}
+		&__feature > p {
+			padding-top: 10px;
+		}
+		&__buttons {
+			margin-top: 10px;
+			justify-content: center;
+		}
+	}
 }

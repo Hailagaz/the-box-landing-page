@@ -1,7 +1,7 @@
 .about {
   width: 1215px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 200px;
   padding: 0 20px;
   position: relative;
   display: flex;
@@ -50,6 +50,11 @@
   }
   .about__container {
     position: initial;
+    width: 902px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .header {
@@ -61,7 +66,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto 16px;
-  padding-top: 16px;
+  padding: 16px 20px 0;
 }
 .header__icon {
   display: none;
@@ -87,7 +92,7 @@
 .header__link {
   overflow: hidden;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 899px) {
   .header__logotype {
     z-index: 5;
   }
@@ -238,6 +243,21 @@
 .hero__button {
   gap: 10px;
 }
+@media screen and (max-width: 497px) {
+  .hero {
+    margin-bottom: 200px;
+  }
+  .hero__header {
+    text-align: center;
+  }
+  .hero__feature > p {
+    padding-top: 10px;
+  }
+  .hero__buttons {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
 .button {
   width: 208px;
   height: 40px;
@@ -380,6 +400,9 @@ main {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.reasons__header {
+  text-align: center;
 }
 .reasons__content {
   margin-top: 63px;

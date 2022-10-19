@@ -9,7 +9,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0 auto 16px;
-	padding-top: 16px;
+	padding: 16px 20px 0;
 	//&__logotype {}
 	//&__menu {}
 	&__icon {
@@ -36,7 +36,7 @@
 	&__link {
 		overflow: hidden;
 	}
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 899px) {
 		&__logotype {
 			z-index: 5;
 		}
