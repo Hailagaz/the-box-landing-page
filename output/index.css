@@ -465,3 +465,61 @@ main {
     text-align: center;
   }
 }
+.services {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f6f8f7;
+}
+.services__header {
+  padding-top: 45px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+.services__container {
+  max-width: 100%;
+  width: 1010px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.services__service {
+  width: 270px;
+  box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  border-radius: 4px;
+  padding: 38px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  color: #2947a9;
+}
+.services__service:nth-child(2n) {
+  background-color: #2947a9;
+  color: #ffffff;
+}
+.services__service:hover {
+  background-image: linear-gradient(315deg, #8599d8 0%, #1b337a 74%);
+  transition: 1s;
+  box-shadow: 0 0 15px 5px #ffffff;
+}
+.services__line {
+  margin-top: 20px;
+  width: 60px;
+  height: 2px;
+  background-color: #e0e3eb;
+}
+.services__line:nth-child(2n+1) {
+  background-color: #ffffff;
+}
+.services__head {
+  margin-top: 20px;
+}
