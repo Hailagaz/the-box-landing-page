@@ -15,7 +15,6 @@
 		width: 1100px;
 		max-width: 100%;
 		margin: 0 auto;
-		//gap: 150px;
 
 		display: flex;
 		align-items: center;
@@ -120,6 +119,22 @@
 		border-radius: 2px;
 	}
 	@media screen and (max-width: 899px) {
+		margin-top: 60px;
 		
+		&__container {
+			justify-content: center;
+			flex-direction: column-reverse;
+			gap: 50px;
+		}
+		&__experience {
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			text-align: center;
+			width: 600px;
+		}
+		&__text {
+			width: 600px;
+		}
 	}
 }

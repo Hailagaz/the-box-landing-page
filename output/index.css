@@ -628,3 +628,23 @@ main {
   background-color: #2947a9;
   border-radius: 2px;
 }
+@media screen and (max-width: 899px) {
+  .stats {
+    margin-top: 60px;
+  }
+  .stats__container {
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .stats__experience {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 600px;
+  }
+  .stats__text {
+    width: 600px;
+  }
+}
