@@ -612,6 +612,7 @@ main {
 }
 .stats__header {
   color: #2947a9;
+  max-width: 100%;
 }
 .stats__text {
   width: 330px;
@@ -637,6 +638,18 @@ main {
     flex-direction: column-reverse;
     gap: 50px;
   }
+  .stats__statistic {
+    width: 899px;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .stats__block:nth-child(n) {
+    margin-left: 0;
+  }
+  .stats__block:hover {
+    transform: scale(1.1);
+  }
   .stats__experience {
     align-items: center;
     justify-content: center;
@@ -646,5 +659,12 @@ main {
   }
   .stats__text {
     width: 600px;
+  }
+}
+@media screen and (max-width: 379px) {
+  .stats__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
   }
 }

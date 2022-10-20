@@ -63,8 +63,6 @@
 		top: 0px;
 		right: -20px;
 	}
-	//Stop point. Code for unusual images here
-
 	// .stats__count
 	&__count {
 		color: #292e3d;
@@ -99,6 +97,7 @@
 	// .stats__header
 	&__header {
 		color: #2947a9;
+		max-width: 100%;
 	}
 	// .stats__text
 	&__text {
@@ -120,11 +119,23 @@
 	}
 	@media screen and (max-width: 899px) {
 		margin-top: 60px;
-		
+
 		&__container {
 			justify-content: center;
 			flex-direction: column-reverse;
 			gap: 50px;
+		}
+		&__statistic {
+			width: 899px;
+			align-items: center;
+			flex-direction: row;
+			gap: 50px;
+		}
+		&__block:nth-child(n) {
+			margin-left: 0;
+		}
+		&__block:hover {
+			transform: scale(1.1);
 		}
 		&__experience {
 			align-items: center;
@@ -135,6 +146,13 @@
 		}
 		&__text {
 			width: 600px;
+		}
+	}
+	@media screen and (max-width: 379px) {
+		&__header {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 42px;
 		}
 	}
 }
