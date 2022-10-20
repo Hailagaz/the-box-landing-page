@@ -25,6 +25,8 @@
 	}
 	&__block p {
 		margin-top: 30px;
+		font-size: 24px;
+		line-height: 28px;
 	}
 	&__block a {
 		margin-left: 10px;
@@ -32,10 +34,17 @@
 	}
 	// .ads__button
 	&__button {
+		
+		border: solid 2px #ffffff;
+		border-radius: 2px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 21px;
 	}
 
-	&__button a:link,
-	&__button a:visited {
+	&__container a:link,
+	&__container a:visited {
 		color: #ffffff;
+		background-color: rgba(0, 0, 0, 0);
 	}
 }

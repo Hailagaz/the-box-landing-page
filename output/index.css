@@ -79,13 +79,23 @@
 }
 .ads__block p {
   margin-top: 30px;
+  font-size: 24px;
+  line-height: 28px;
 }
 .ads__block a {
   margin-left: 10px;
   border-bottom: solid 1px #ffffff;
 }
-.ads__button a:link, .ads__button a:visited {
+.ads__button {
+  border: solid 2px #ffffff;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+.ads__container a:link, .ads__container a:visited {
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
 }
 .header {
   max-width: 100%;
