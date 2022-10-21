@@ -1,0 +1,23 @@
+[
+	{
+		"photo": "images/projects_card_0_0.png",
+		"name": "Wildstone Infra Hotel",
+		"location": "2715 Ash Dr. San Jose, South Dakota"
+	},
+	{
+		"photo": "images/projects_card_0_1.png",
+		"name": "Wish Stone Building",
+		"location": "2972 Westheimer Rd. Santa Ana, Illinois"
+	},
+	{
+		"photo": "images/projects_card_0_2.png",
+		"name": "Mr. Parkinston's House",
+		"location": "3517 W. Gray St. Utica, Pennsylvania"
+	},
+	{
+		"photo": "images/projects_card_0_3.png",
+		"name": "Oregano Height",
+		"location": "2464 Royal Ln. Mesa, New Jersey"
+	}
+	
+]
