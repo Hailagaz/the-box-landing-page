@@ -76,6 +76,7 @@
 }
 .ads__block {
   color: #ffffff;
+  text-align: center;
 }
 .ads__block p {
   margin-top: 30px;
@@ -96,6 +97,29 @@
 .ads__container a:link, .ads__container a:visited {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
+}
+@media screen and (max-width: 1099px) {
+  .ads__container {
+    padding-top: 50px;
+    gap: 50px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 810px) {
+  .ads__container {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 459px) {
+  .ads__block h3 {
+    font-size: 24px;
+  }
+  .ads__block p {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .header {
   max-width: 100%;
