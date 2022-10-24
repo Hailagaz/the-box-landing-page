@@ -1,12 +1,22 @@
 .projects {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 	// .projects__header
 	&__header {
+		margin-bottom: 40px;
 	}
 	// .projects__container
 	&__container {
+		display: flex;
+		flex-direction: row;
 	}
 	// .projects__menu
 	&__menu {
+		display: flex;
+		flex-direction: column;
 	}
 	// .projects__btn
 	&__btn {
