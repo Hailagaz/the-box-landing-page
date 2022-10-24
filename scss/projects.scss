@@ -23,15 +23,32 @@
 	}
 	// .projects__constructed
 	&__constructed {
+		gap: 32px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 	// .projects__card
 	&__card {
+		width: 384px;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 	// .projects__image
 	&__image {
 	}
 	// .projects__info
 	&__info {
+		background-color: #2947A9;
+		color: #ffffff;
+		padding: 12px;
+	}
+	&__info p:first-child {
+		margin-bottom: 12px;
 	}
 }
 .active {
