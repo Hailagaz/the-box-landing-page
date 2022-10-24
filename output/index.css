@@ -496,12 +496,17 @@ main {
   flex-wrap: wrap;
 }
 .projects__info {
-  background-color: #2947A9;
+  background-color: #2947a9;
   color: #ffffff;
   padding: 12px;
 }
 .projects__info p:first-child {
   margin-bottom: 12px;
+  font-weight: 700;
+}
+.projects__info p:nth-child(2) {
+  font-size: 18px;
+  line-height: 21px;
 }
 .reasons {
   margin-top: 60px;
