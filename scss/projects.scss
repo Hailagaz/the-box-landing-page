@@ -36,7 +36,18 @@
 		line-height: 28px;
 		color: #C2C7D6;
 		cursor: pointer;
-		
+		white-space: nowrap;
+		text-align: left;
+		transition: all 0.25s;
+		&.active {
+			color: #2947a9;
+			border-left-color: #2947a9;
+		}
+		&:hover {
+			color: #2947a9;
+			background-color: #a8b5e2;
+		}
+
 	}
 	// .projects__constructed
 	&__constructed {
@@ -77,5 +88,5 @@
 	}
 }
 .active {
-	display: block;
+	//display: block;
 }

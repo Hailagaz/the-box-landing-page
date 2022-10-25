@@ -492,6 +492,17 @@ main {
   line-height: 28px;
   color: #C2C7D6;
   cursor: pointer;
+  white-space: nowrap;
+  text-align: left;
+  transition: all 0.25s;
+}
+.projects__btn.active {
+  color: #2947a9;
+  border-left-color: #2947a9;
+}
+.projects__btn:hover {
+  color: #2947a9;
+  background-color: #a8b5e2;
 }
 .projects__constructed {
   width: 800px;
@@ -522,10 +533,6 @@ main {
 .projects__info p:nth-child(2) {
   font-size: 18px;
   line-height: 21px;
-}
-
-.active {
-  display: block;
 }
 .reasons {
   margin-top: 60px;
