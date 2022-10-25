@@ -3,7 +3,7 @@ const projectsBtns = document.querySelectorAll('.projects__btn');
 for (const btn of projectsBtns) {
 	btn.addEventListener('click', e => {
 		const btnIndex = e.target.dataset.index;
-		const activeprojectsBlock = document.querySelector('.jobs__block.active');
+		const activeprojectsBlock = document.querySelector('.projects__block.active');
 		if (activeprojectsBlock.dataset.index === btnIndex) {
 			return;
 		}
@@ -12,7 +12,7 @@ for (const btn of projectsBtns) {
 		e.target.classList.add('active');
 		activeprojectsBtn.classList.remove('active');
 
-		const projectsBlock = document.querySelector(`.jobs__block[data-index="${btnIndex}"]`);
+		const projectsBlock = document.querySelector(`.projects__block[data-index="${btnIndex}"]`);
 		activeprojectsBlock.classList.remove('active');
 		projectsBlock.classList.add('active');
 	});

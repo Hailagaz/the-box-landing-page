@@ -504,11 +504,11 @@ main {
   color: #2947a9;
   background-color: #a8b5e2;
 }
-.projects__constructed {
+.projects__block {
   width: 800px;
   max-width: 100%;
+  display: none;
   gap: 32px;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -533,6 +533,10 @@ main {
 .projects__info p:nth-child(2) {
   font-size: 18px;
   line-height: 21px;
+}
+
+.active {
+  display: flex;
 }
 .reasons {
   margin-top: 60px;

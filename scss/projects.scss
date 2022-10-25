@@ -50,12 +50,14 @@
 
 	}
 	// .projects__constructed
-	&__constructed {
+	&__constructed {}
+	&__block {
 		width: 800px;
 		max-width: 100%;
+		display: none;
 
 		gap: 32px;
-		display: flex;
+		//display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -88,5 +90,5 @@
 	}
 }
 .active {
-	//display: block;
+	display: flex;
 }
