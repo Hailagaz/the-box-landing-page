@@ -314,6 +314,12 @@
 .hero__button {
   gap: 10px;
 }
+.hero__button:hover:nth-child(2n+1) {
+  transform-origin: left bottom;
+}
+.hero__button:hover:nth-child(2n) {
+  transform-origin: right bottom;
+}
 @media screen and (max-width: 497px) {
   .hero {
     margin-bottom: 200px;
@@ -354,6 +360,9 @@
   color: #ffffff;
   transition: 0.5s;
   box-shadow: 0 0 15px 5px #ffffff;
+  transform: scale(1.1);
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 
 .button a {

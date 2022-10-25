@@ -60,6 +60,12 @@
 	}
 	&__button {
 		gap: 10px;
+		&:hover:nth-child(2n+1) {
+			transform-origin: left bottom;
+		}
+		&:hover:nth-child(2n) {
+			transform-origin: right bottom;
+		}
 	}
 	@media screen and (max-width: 497px) {
 		margin-bottom: 200px;

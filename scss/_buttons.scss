@@ -25,6 +25,9 @@
 	color: #ffffff;
 	transition: 0.5s;
 	box-shadow: 0 0 15px 5px #ffffff;
+	transform: scale(1.1);
+    transform-origin: center;
+    transition: transform 0.3s ease;
 }
 
 .button a {
