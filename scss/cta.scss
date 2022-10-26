@@ -40,11 +40,15 @@
 	&__textfield {
 		width: 280px;
 		max-width: 100%;
-		border: 1px solid #e0e3eb;
-		border-radius: 4px;
 	}
 	// .cta__textfield-input
 	&__textfield-input {
+		border: 1px solid #e0e3eb;
+		border-radius: 4px;
+		padding: 10px;
+		font-size: 18px;
+		line-height: 21px;
+		color: #A3AAC2;
 	}
 	// .cta__textarea
 	&__textarea {
@@ -67,6 +71,15 @@
 
 form select:invalid {
 	color: gray;
+}
+form select:valid {
+	color: #2947a9;
+}
+form input:valid {
+	color: #2947a9;
+}
+form textarea:valid {
+	color: #2947a9;
 }
 input[type="submit"] {
 	display: none;
