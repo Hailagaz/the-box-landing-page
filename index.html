@@ -379,44 +379,48 @@
 			</div>
 		</div>
 		<div class="cta">
-			<h3 class="cta__header">What can us do for you?</h3>
-			<p class="cta__explain">We are ready to work on a project of any complexity, whether it’s commercial or
-				residential.</p>
-			<div class="cta__contact">
-				<form action="/backend/action_form.php" method="post" enctype="multipart/form-data">
-					<div class="cta__textfield">
-						<input type="text" name="name" placeholder="Your Name" class="cta__textfield-input" required="">
-					</div>
-					<div class="cta__textfield">
-						<input type="email" name="email" placeholder="Email" class="cta__textfield-input" required="">
-					</div>
-					<div class="cta__textfield">
-						<select name="contactReason" class="cta__textfield-input" required="">
-							<option value="" disabled selected hidden>Reason for Contacting</option>
-							<option value="construction">Construction</option>
-							<option value="renovation">Renovation</option>
-							<option value="consultation">Consultation</option>
-							<option value="repair">Repair</option>
-							<option value="architecture">Architecture</option>
-							<option value="electric">Electric</option>
-						</select>
-					</div>
-					<div class="cta__textfield">
-						<input type="tel" name="phone" placeholder="Phone" class="cta__textfield-input">
-					</div>
-					<div class="cta__textarea">
-						<textarea name="message" placeholder="Message" class="cta__message" cols="50"
-							rows="10"></textarea>
-					</div>
-					<p><img src="images/cta_required.png" alt="Required fields"> indicates a required field</p>
-					<div class="cta__button button">
-						<label for="button-submit" class="cta__label"
-							style="cursor: pointer">Submit</label>
-						<input type="submit" value="Submit" style="cursor: pointer" class="cta__load"
-							id="button-submit">
-					</div>
-				</form>
+			<div class="cta__container">
+				<h3 class="cta__header">What can us do for you?</h3>
+				<p class="cta__explain">We are ready to work on a project of any complexity, whether it’s commercial or
+					residential.</p>
+				<div class="cta__contact">
+					<form action="/backend/action_form.php" method="post" enctype="multipart/form-data">
+						<div class="cta__textfield">
+							<input type="text" name="name" placeholder="Your Name" class="cta__textfield-input"
+								required="">
+						</div>
+						<div class="cta__textfield">
+							<input type="email" name="email" placeholder="Email" class="cta__textfield-input"
+								required="">
+						</div>
+						<div class="cta__textfield">
+							<select name="contactReason" class="cta__textfield-input" required="">
+								<option value="" disabled selected hidden>Reason for Contacting</option>
+								<option value="construction">Construction</option>
+								<option value="renovation">Renovation</option>
+								<option value="consultation">Consultation</option>
+								<option value="repair">Repair</option>
+								<option value="architecture">Architecture</option>
+								<option value="electric">Electric</option>
+							</select>
+						</div>
+						<div class="cta__textfield">
+							<input type="tel" name="phone" placeholder="Phone" class="cta__textfield-input">
+						</div>
+						<div class="cta__textarea">
+							<textarea name="message" placeholder="Message" class="cta__message" cols="50"
+								rows="10"></textarea>
+						</div>
+						<p><img src="images/cta_required.png" alt="Required fields"> indicates a required field</p>
+						<div class="cta__button button">
+							<label for="button-submit" class="cta__label" style="cursor: pointer">Submit</label>
+							<input type="submit" value="Submit" style="cursor: pointer" class="cta__load"
+								id="button-submit">
+						</div>
+					</form>
+				</div>
 			</div>
+
 		</div>
 	</main>
 
