@@ -1,7 +1,7 @@
 .cta {
 	background-color: #f6f8f7;
 	&__container {
-		padding: 60px 20px 0;
+		padding: 60px 20px 60px;
 		margin: 0 auto;
 		width: 1216px;
 		max-width: 100%;
@@ -28,11 +28,14 @@
 	// .cta__contact
 	&__contact {
 		form {
-			width: 592px;
+	 		width: 592px;
 			max-width: 100%;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+
 			gap: 32px;
 		}
 	}
@@ -43,18 +46,34 @@
 	}
 	// .cta__textfield-input
 	&__textfield-input {
+		width: inherit;
+		max-width: 100%;
+
 		border: 1px solid #e0e3eb;
 		border-radius: 4px;
 		padding: 10px;
 		font-size: 18px;
 		line-height: 21px;
-		color: #A3AAC2;
+		color: #a3aac2;
 	}
 	// .cta__textarea
 	&__textarea {
+		width: inherit;
+		max-width: 100%;
 	}
 	// .cta__message
 	&__message {
+		width: inherit;
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 21px;
+		padding: 10px;
+	}
+	&__textarea p {
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 19px;
+		color: #667299;
 	}
 	// .cta__button
 	form &__button {
