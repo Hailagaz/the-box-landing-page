@@ -1,0 +1,41 @@
+.cta {
+	// .cta__header
+	&__header {
+	}
+	// .cta__explain
+	&__explain {
+	}
+	// .cta__contact
+	&__contact {
+	}
+	// .cta__textfield
+	&__textfield {
+	}
+	// .cta__textfield-input
+	&__textfield-input {
+	}
+	// .cta__textarea
+	&__textarea {
+	}
+	// .cta__message
+	&__message {
+	}
+	// .cta__button
+	form &__button {
+		background-color: #2947a9;
+		color: #ffffff;
+	}
+	// .cta__label
+	&__label {
+	}
+	// .cta__load
+	&__load {
+	}
+}
+
+form select:invalid {
+	color: gray;
+}
+input[type="submit"] {
+	display: none;
+}

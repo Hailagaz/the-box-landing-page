@@ -128,7 +128,17 @@
     padding-top: 25px;
   }
 }
+form .cta__button {
+  background-color: #2947a9;
+  color: #ffffff;
+}
+form select:invalid {
+  color: gray;
+}
 
+input[type=submit] {
+  display: none;
+}
 .header {
   max-width: 100%;
   width: 1216px;
