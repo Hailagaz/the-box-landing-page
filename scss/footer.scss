@@ -1,7 +1,7 @@
 .footer {
 	// .footer__container
 	&__container {
-		margin: 85px auto 0;
+		margin: 85px auto 85px;
 		padding: 0 20px;
 		width: 1216px;
 		max-width: 100%;
@@ -14,36 +14,91 @@
 	}
 	// .footer__information
 	&__information {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 30px;
 	}
 	// .footer__address
 	&__address {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	// .footer__address-head
 	&__address-head {
+		width: 105px;
+		max-width: 100%;
+		color: #2947a9;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 23px;
 	}
 	// .footer__address-text
 	&__address-text {
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: capitalize;
+		color: #292e3d;
+		cursor: pointer;
 	}
 	// .footer__phone
 	&__phone {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	// .footer__phone-head
 	&__phone-head {
+		width: 105px;
+		max-width: 100%;
+		color: #2947a9;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 23px;
 	}
 	// .footer__phone-text
 	&__phone-text {
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: capitalize;
+		color: #292e3d;
 	}
 	// .footer__email
 	&__email {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	// .footer__email-head
 	&__email-head {
+		width: 105px;
+		max-width: 100%;
+		color: #2947a9;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 23px;
 	}
 	// .footer__email-text
 	&__email-text {
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: capitalize;
+		color: #292e3d;
 	}
 	// .footer__logotype
 	&__logotype {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	// .footer__feedback
 	&__feedback {
@@ -87,5 +142,28 @@
 		color: #ffffff;
 		font-size: 16px;
 		line-height: 19px;
+	}
+	@media screen and (max-width: 459px) {
+		&__static p {
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 530px) {
+		&__container {
+			justify-content: center;
+			gap: 30px;
+		}
+		&__address {
+			flex-direction: column;
+		}
+		&__phone {
+			flex-direction: column;
+		}
+		&__email {
+			flex-direction: column;
+		}
+		&__logotype {
+			flex-direction: column;
+		}
 	}
 }
