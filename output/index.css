@@ -221,6 +221,7 @@ form textarea:valid {
 input[type=submit] {
   display: none;
 }
+
 .header {
   max-width: 100%;
   width: 1216px;
