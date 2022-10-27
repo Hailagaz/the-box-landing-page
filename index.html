@@ -425,58 +425,64 @@
 	</main>
 	<footer class="footer">
 		<div class="footer__container">
-			<div class="footer__information">
-				<div class="footer__address">
-					<div class="footer__address-head">ADDRESS:</div>
-					<div class="footer__address-text">
-						6391 Elgin St. Celina, Delaware 10299
+			<div class="footer__content">
+				<div class="footer__information">
+					<div class="footer__address">
+						<div class="footer__address-head">ADDRESS:</div>
+						<div class="footer__address-text">
+							6391 Elgin St. Celina, Delaware 10299
+						</div>
+					</div>
+					<div class="footer__phone">
+						<div class="footer__phone-head">PHONE:</div>
+						<div class="footer__phone-text">
+							<a href="tel:+84-1102-2703">+84 1102 2703</a>
+						</div>
+					</div>
+					<div class="footer__email">
+						<div class="footer__email-head">EMAIL:</div>
+						<div class="footer__email-text">
+							<a href="mailto: hello@thebox.com">hello@thebox.com</a>
+						</div>
+					</div>
+					<div class="footer__logotype">
+						<img src="images/logotype_01.png" alt="Footer logotype">
 					</div>
 				</div>
-				<div class="footer__phone">
-					<div class="footer__phone-head">PHONE:</div>
-					<div class="footer__phone-text">
-						<a href="tel:+84-1102-2703">+84 1102 2703</a>
+				<div class="footer__feedback">
+					<div class="footer__newsletter">
+						<p>NEWSLETTER:</p>
+						<form action="/backend/action_subscribe.php" method="post" enctype="multipart/form-data">
+							<div class="footer__textfield">
+								<input type="email" name="email" placeholder="Your email here"
+									class="footer__textfield-input">
+							</div>
+							<div class="footer__button button">
+								<label for="button-submit" class="footer__label"
+									style="cursor: pointer">Subscribe</label>
+								<input type="submit" value="Submit" style="cursor: pointer" class="footer__load"
+									id="button-submit">
+							</div>
+						</form>
 					</div>
-				</div>
-				<div class="footer__email">
-					<div class="footer__email-head">EMAIL:</div>
-					<div class="footer__email-text">
-						<a href="mailto: hello@thebox.com">hello@thebox.com</a>
+					<div class="footer__social">
+						<p>SOCIAL:</p>
+						<div class="footer__links">
+							<a href="https://www.facebook.com/" class="footer__link">
+								<img src="images/footer_social_facebook.png" alt="Link to our facebook page">
+							</a>
+							<a href="https://www.instagram.com/" class="footer__link">
+								<img src="images/footer_social_instagram.png" alt="Link to our instagram page">
+							</a>
+							<a href="https://twitter.com/" class="footer__link">
+								<img src="images/footer_social_twitter.png" alt="Link to our twitter page">
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="footer__logotype">
-					<img src="images/logotype_01.png" alt="Footer logotype">
 				</div>
 			</div>
-			<div class="footer__feedback">
-				<div class="footer__newsletter">
-					<p>NEWSLETTER:</p>
-					<form action="/backend/action_subscribe.php" method="post" enctype="multipart/form-data">
-						<div class="footer__textfield">
-							<input type="email" name="email" placeholder="Your email here"
-								class="footer__textfield-input">
-						</div>
-						<div class="footer__button button">
-							<label for="button-submit" class="footer__label" style="cursor: pointer">Subscribe</label>
-							<input type="submit" value="Submit" style="cursor: pointer" class="footer__load"
-								id="button-submit">
-						</div>
-					</form>
-				</div>
-				<div class="footer__social">
-					<p>SOCIAL:</p>
-					<div class="footer__links">
-						<a href="https://www.facebook.com/" class="footer__link">
-							<img src="images/footer_social_facebook.png" alt="Link to our facebook page">
-						</a>
-						<a href="https://www.instagram.com/" class="footer__link">
-							<img src="images/footer_social_instagram.png" alt="Link to our instagram page">
-						</a>
-						<a href="https://twitter.com/" class="footer__link">
-							<img src="images/footer_social_twitter.png" alt="Link to our twitter page">
-						</a>
-					</div>
-				</div>
+			<div class="footer__static">
+				<p>TheBox Company &copy; 2022. All Rights Reserved</p>
 			</div>
 		</div>
 	</footer>
