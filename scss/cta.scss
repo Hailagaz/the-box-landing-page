@@ -63,7 +63,7 @@
 	}
 	// .cta__textarea
 	&__textarea {
-		width: inherit;
+		width: 592px;
 		max-width: 100%;
 	}
 	// .cta__message
@@ -90,6 +90,20 @@
 	}
 	// .cta__load
 	&__load {
+	}
+	@media screen and (max-width: 767px) {
+		&__contact {
+			form {
+				flex-direction: column;
+				width: auto;
+			}
+		}
+		&__textarea {
+			width: auto;
+		}
+		&__message {
+			width: 280px;
+		}
 	}
 }
 
