@@ -410,6 +410,9 @@ form .footer__button {
   .footer__address {
     flex-direction: column;
   }
+  .footer__address-text {
+    text-align: center;
+  }
   .footer__phone {
     flex-direction: column;
   }
@@ -419,8 +422,19 @@ form .footer__button {
   .footer__logotype {
     flex-direction: column;
   }
+  .footer__feedback {
+    align-items: center;
+  }
+  .footer__newsletter {
+    align-items: center;
+  }
+  .footer__form {
+    justify-content: center;
+  }
+  .footer__social {
+    align-items: center;
+  }
 }
-
 form input:valid {
   color: #2947a9;
 }

@@ -219,6 +219,9 @@
 		&__address {
 			flex-direction: column;
 		}
+		&__address-text {
+			text-align: center;
+		}
 		&__phone {
 			flex-direction: column;
 		}
@@ -228,6 +231,21 @@
 		&__logotype {
 			flex-direction: column;
 		}
+		&__feedback {
+			align-items: center;
+		}
+		&__newsletter {
+			align-items: center;
+		}
+		&__form {
+			justify-content: center;
+		}
+		&__social {
+			align-items: center;
+		}
+	}
+	@media screen and (max-width: 950px) {
+		&__information {}
 	}
 }
 
