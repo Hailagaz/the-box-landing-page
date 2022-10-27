@@ -397,27 +397,50 @@ form .footer__button {
   font-size: 16px;
   line-height: 19px;
 }
-@media screen and (max-width: 459px) {
-  .footer__static p {
-    text-align: center;
+@media screen and (max-width: 929px) {
+  .footer__address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__phone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__email {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__form {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  form .footer__button {
+    width: 237px;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 767px) {
   .footer__container {
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
   }
+  .footer__information {
+    align-items: center;
+  }
   .footer__address {
     flex-direction: column;
+    align-items: center;
   }
   .footer__address-text {
     text-align: center;
   }
   .footer__phone {
     flex-direction: column;
+    align-items: center;
   }
   .footer__email {
     flex-direction: column;
+    align-items: center;
   }
   .footer__logotype {
     flex-direction: column;
@@ -434,7 +457,11 @@ form .footer__button {
   .footer__social {
     align-items: center;
   }
+  .footer__static p {
+    text-align: center;
+  }
 }
+
 form input:valid {
   color: #2947a9;
 }
