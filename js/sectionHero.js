@@ -17,11 +17,11 @@ fetch("js/featureProjects.json")
 						<p>Feature Projects</p>
 						<p>${project.name}</p>
 						<div class="hero__buttons">
-							<a href="#" target="_blank" class="button hero__button">
+							<a href="#" target="_blank" class="button hero__button hero__button-prev">
 								<img src="images/hero_arrowleft.svg" alt="Arrow to the left">
 								Back
 							</a>
-							<a href="#" target="_blank" class="button hero__button">
+							<a href="#" target="_blank" class="button hero__button hero__button-next">
 								Next
 								<img src="/images/hero_arrowright.svg" alt="Arrow to the right">
 							</a>
@@ -74,8 +74,8 @@ fetch("js/featureProjects.json")
 				clickable: true,
 			},
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: '.hero__button-next',
+				prevEl: '.hero__button-prev',
 			},
 		});
 	})
