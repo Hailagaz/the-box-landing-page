@@ -1,10 +1,10 @@
 .hero {
 	height: 646px;
-	background-image: url(../images/hero_background.png);
+	//background-image: url(../images/hero_background.png);
 	background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 16.58%, rgba(255, 255, 255, 0) 72.38%);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	//background-position: center;
+	//background-repeat: no-repeat;
+	//background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -12,7 +12,7 @@
 	padding: 0 32px;
 
 	&__slider {
-		
+
 	}
 
 

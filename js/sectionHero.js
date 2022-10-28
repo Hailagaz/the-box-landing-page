@@ -32,7 +32,7 @@ fetch("js/featureProjects.json")
 		}
 
 		document.querySelector('.swiper').innerHTML = `
-		<div class="swiper-wrapper testimonials__wrapper">
+		<div class="swiper-wrapper hero__wrapper">
 			${slides}
 		  </div>
 		  <!--  -->
@@ -44,7 +44,7 @@ fetch("js/featureProjects.json")
 		const swiper = new Swiper('.swiper', {
 			loop: true,
 
-			slidesPerView: 1.5,
+			slidesPerView: 1,
 			watchOverflow: true,
 			spaceBetween: 125,
 			slidesPerGroup: 1,
@@ -67,29 +67,6 @@ fetch("js/featureProjects.json")
 			mousewheel: {
 				sensitivity: 1,
 				//eventTarget: ".testimonials__slider",
-			},
-
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 25,
-				},
-				768: {
-					slidesPerView: 1.5,
-					spaceBetween: 125,
-				},
-				1920: {
-					slidesPerView: 1.7
-				},
-				2300: {
-					slidesPerView: 2
-				},
-				2700: {
-					slidesPerView: 2.5
-				},
-				3400: {
-					slidesPerView: 3
-				}
 			},
 
 			pagination: {
