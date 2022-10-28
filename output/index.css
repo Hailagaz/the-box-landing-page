@@ -833,6 +833,7 @@ main {
 .projects__container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -905,12 +906,6 @@ main {
   font-size: 18px;
   line-height: 21px;
 }
-@media screen and (max-width: 1050px) {
-  .projects__container {
-    flex-direction: column;
-  }
-}
-
 @keyframes fade-away {
   from {
     opacity: 0;

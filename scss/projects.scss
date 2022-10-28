@@ -16,6 +16,7 @@
 	&__container {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: flex-start;
 	}
@@ -101,9 +102,9 @@
 	}
 
 	@media screen and (max-width: 1050px) {
-		&__container {
-			flex-direction: column;
-		}
+		// &__container {
+		// 	flex-direction: column;
+		// }
 	}
 }
 // .active {
