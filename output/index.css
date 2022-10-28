@@ -609,11 +609,20 @@ form input:valid {
 .hero {
   height: 646px;
   background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 16.58%, rgba(255, 255, 255, 0) 72.38%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 0 32px;
+}
+.hero__slider {
+  height: 646px;
+  max-width: 100%;
+}
+.hero__slide {
+  position: relative;
+}
+.hero__photo {
+  height: 646px;
+  width: 1216px;
+  position: absolute;
+  z-index: -1;
 }
 .button {
   width: 208px;
