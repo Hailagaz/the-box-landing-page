@@ -609,7 +609,6 @@ form input:valid {
 .hero {
   height: 646px;
   background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 16.58%, rgba(255, 255, 255, 0) 72.38%);
-  padding: 0 32px;
 }
 .hero__slider {
   height: 646px;
@@ -617,12 +616,15 @@ form input:valid {
 }
 .hero__slide {
   position: relative;
+  width: inherit;
+  height: inherit;
 }
-.hero__photo {
-  height: 646px;
-  width: 1216px;
+.hero__photo img {
+  height: 100vh;
+  width: 100vw;
   position: absolute;
   z-index: -1;
+  object-fit: cover;
 }
 .button {
   width: 208px;
