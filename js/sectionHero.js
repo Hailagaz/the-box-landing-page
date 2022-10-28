@@ -23,7 +23,7 @@ fetch("js/featureProjects.json")
 							</a>
 							<a href="#" target="_blank" class="button hero__button hero__button-next">
 								Next
-								<img src="/images/hero_arrowright.svg" alt="Arrow to the right">
+								<img src="images/hero_arrowright.svg" alt="Arrow to the right">
 							</a>
 						</div>
 					</div>
