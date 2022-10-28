@@ -1,0 +1,22 @@
+[
+	{
+		"photo": "images/hero_background.png",
+		"name": "The National University of Architecture"
+	},
+	{
+		"photo": "images/projects_card_0_0.png",
+		"name": "Wildstone Infra Hotel"
+	},
+	{
+		"photo": "images/projects_card_1_0.png",
+		"name": "Lorem ipsum dolor"
+	},
+	{
+		"photo": "images/projects_card_2_0.png",
+		"name": "Lorem ipsum dolor"
+	},
+	{
+		"photo": "images/projects_card_2_3.png",
+		"name": "Lorem ipsum dolor"
+	}
+]
