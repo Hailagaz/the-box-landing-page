@@ -54,7 +54,7 @@ fetch("js/featureProjects.json")
 			coverflowEffect: {
 				rotate: 0,
 				slideShadows: false,
-				scale: 0.8,
+				scale: 1.0,
 			},
 			slideToClickedSlide: true,
 
