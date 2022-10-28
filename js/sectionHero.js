@@ -1,31 +1,37 @@
 //Get data and build sliders structure
-fetch("js/testimonials.json")
-.then((response) => response.json())
-.then((data) => {
-	let slides = '';
+fetch("js/featureProjects.json")
+	.then((response) => response.json())
+	.then((data) => {
+		let slides = '';
 
-	for (let testimonial of data) {
-		slides += `
-			<div class="swiper-slide testimonials__slide">
-				<img class="swiper-location testimonials__location" 
-					src="${testimonial.location}" 
-					alt="Location where commentator made photo">
-				<div class="swiper-info testimonials__info">
-					<img class="swiper-photo testimonials__photo" 
-						src="${testimonial.photo}" 
-						alt="Photo of commentator">
-					<div class="swiper-testimonial testimonials__testimonial">
-						<p>${testimonial.testimonial}</p>
+		for (let project of data) {
+			slides += `
+				<div class="swiper-slide hero__slide">
+					<div class="hero__photo">
+						<img src="${project.photo}" alt="Photo of build project">
 					</div>
-					<div class="swiper-name testimonials__name">
-						<p>-${testimonial.name}</p>
+					<div class="hero__header">
+						<h1>Building things is our mission.</h1>
+					</div>
+					<div class="hero__feature">
+						<p>Feature Projects</p>
+						<p>${project.name}</p>
+						<div class="hero__buttons">
+							<a href="#" target="_blank" class="button hero__button">
+								<img src="images/hero_arrowleft.svg" alt="Arrow to the left">
+								Back
+							</a>
+							<a href="#" target="_blank" class="button hero__button">
+								Next
+								<img src="/images/hero_arrowright.svg" alt="Arrow to the right">
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		`;
-	}
+			`;
+		}
 
-	document.querySelector('.swiper').innerHTML = `
+		document.querySelector('.swiper').innerHTML = `
 		<div class="swiper-wrapper testimonials__wrapper">
 			${slides}
 		  </div>
@@ -35,67 +41,67 @@ fetch("js/testimonials.json")
 		  <!-- <div class="swiper-button-next"></div> -->
 	`;
 
-	const swiper = new Swiper('.swiper', {
-		loop: true,
+		const swiper = new Swiper('.swiper', {
+			loop: true,
 
-		slidesPerView: 1.5,
-		watchOverflow: true,
-		spaceBetween: 125,
-		slidesPerGroup: 1,
-		centeredSlides: true,
+			slidesPerView: 1.5,
+			watchOverflow: true,
+			spaceBetween: 125,
+			slidesPerGroup: 1,
+			centeredSlides: true,
 
-		effect: 'coverflow',
-		coverflowEffect: {
-			rotate: 0,
-			slideShadows: false,
-			scale: 0.8,
-		},
-		slideToClickedSlide: true,
-
-		keyboard: {
-			enabled: true,
-			onlyInViewport: true,
-			pageUpDown: true,
-		},
-
-		mousewheel: {
-			sensitivity: 1,
-			//eventTarget: ".testimonials__slider",
-		},
-
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 25,
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 0,
+				slideShadows: false,
+				scale: 0.8,
 			},
-			768: {
-				slidesPerView: 1.5,
-				spaceBetween: 125,
-			},
-			1920: {
-				slidesPerView: 1.7
-			},
-			2300: {
-				slidesPerView: 2
-			},
-			2700: {
-				slidesPerView: 2.5
-			},
-			3400: {
-				slidesPerView: 3
-			}
-		},
+			slideToClickedSlide: true,
 
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true,
+				pageUpDown: true,
+			},
+
+			mousewheel: {
+				sensitivity: 1,
+				//eventTarget: ".testimonials__slider",
+			},
+
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 25,
+				},
+				768: {
+					slidesPerView: 1.5,
+					spaceBetween: 125,
+				},
+				1920: {
+					slidesPerView: 1.7
+				},
+				2300: {
+					slidesPerView: 2
+				},
+				2700: {
+					slidesPerView: 2.5
+				},
+				3400: {
+					slidesPerView: 3
+				}
+			},
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	})
+	.catch((error) => {
+		document.querySelector('.swiper').innerHTML = '<p>Sorry, we have some problems. We will fix them soon.</p>';
 	});
-})
-.catch((error) => {
-	document.querySelector('.swiper').innerHTML = '<p>Sorry, we have some problems. We will fix them soon.</p>';
-});

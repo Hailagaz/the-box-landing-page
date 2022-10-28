@@ -50,7 +50,19 @@
 
 	<main>
 		<div class="hero">
-			<div class="hero__header">
+			<!-- Live section hero -->
+			<div class="swiper hero__slider">
+				<div class="swiper-spinner">
+					<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66"
+						xmlns="http://www.w3.org/2000/svg">
+						<circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+						</circle>
+					</svg>
+				</div>
+			</div>
+
+			<!-- Static section hero -->
+			<!-- <div class="hero__header">
 				<h1>Building things is our mission.</h1>
 			</div>
 			<div class="hero__feature">
@@ -66,7 +78,7 @@
 						<img src="/images/hero_arrowright.svg" alt="Arrow to the right">
 					</a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="reasons">
 			<div class="reasons__header">
@@ -451,7 +463,8 @@
 			<div class="footer__feedback">
 				<div class="footer__newsletter">
 					<p>NEWSLETTER:</p>
-					<form class="footer__form" action="/backend/action_subscribe.php" method="post" enctype="multipart/form-data">
+					<form class="footer__form" action="/backend/action_subscribe.php" method="post"
+						enctype="multipart/form-data">
 						<div class="footer__textfield">
 							<input type="email" name="email" placeholder="Your email here"
 								class="footer__textfield-input">
