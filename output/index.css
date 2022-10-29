@@ -578,6 +578,7 @@ form input:valid {
   }
   .header__nav._active {
     left: 0;
+    z-index: 2;
   }
   .header__nav::before {
     content: "";
