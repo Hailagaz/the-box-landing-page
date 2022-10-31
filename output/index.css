@@ -741,22 +741,6 @@ form input:valid {
   border-bottom: none;
 }
 
-.scrolltop {
-  position: fixed;
-  bottom: 50px;
-  right: 25px;
-  z-index: 5;
-  cursor: pointer;
-}
-
-.showbutton {
-  opacity: 1;
-  transition: 0.5s;
-}
-.showbutton__hidden {
-  opacity: 0;
-}
-
 a:hover {
   border-bottom: solid 2px #ffffff;
 }
@@ -857,6 +841,27 @@ h3 {
     font-size: 50px;
   }
 }
+.scrolltop {
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.showbutton {
+  opacity: 1;
+  transition: 0.5s;
+}
+.showbutton__hidden {
+  opacity: 0;
+}
+
+.showbutton:hover {
+  transform: scale(1.1);
+  transition: transform 0.25s;
+}
+
 * {
   margin: 0;
   padding: 0;
