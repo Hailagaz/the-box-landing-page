@@ -2,5 +2,4 @@
 
 ##Todo
 
-Fix section hero - change bg to slider
 Fix section projects - change blocks to sliders
