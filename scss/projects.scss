@@ -113,6 +113,19 @@
 		line-height: 21px;
 	}
 
+	&__buttons {
+		margin-top: 26px;
+		color: #ffffff;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__button {
+		gap: 10px;
+	}
+
 	@media screen and (max-width: 856px) {
 		&__header {
 			text-align: center;

@@ -976,6 +976,18 @@ main {
   font-size: 18px;
   line-height: 21px;
 }
+.projects__buttons {
+  margin-top: 26px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects__button {
+  gap: 10px;
+}
 @media screen and (max-width: 856px) {
   .projects__header {
     text-align: center;

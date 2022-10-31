@@ -1,0 +1,22 @@
+[
+	{
+		"photo": "images/projects_card_2_0.png",
+		"name": "Lorem ipsum dolor",
+		"location": "Far-far away in the unknown land "
+	},
+	{
+		"photo": "images/projects_card_2_1.png",
+		"name": "Lorem ipsum dolor",
+		"location": "Far-far away in the unknown land "
+	},
+	{
+		"photo": "images/projects_card_2_2.png",
+		"name": "Lorem ipsum dolor",
+		"location": "Far-far away in the unknown land "
+	},
+	{
+		"photo": "images/projects_card_2_3.png",
+		"name": "Lorem ipsum dolor",
+		"location": "Far-far away in the unknown land "
+	}
+]
