@@ -933,6 +933,15 @@ main {
   color: #2947a9;
   background-color: #a8b5e2;
 }
+.projects__slider {
+  height: 646px;
+  max-width: 100%;
+}
+.projects__slide {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
 .projects__block {
   max-width: 800px;
   width: 100%;

@@ -59,6 +59,35 @@
 		// align-items: center;
 	}
 
+	//Add swiper slider styles
+
+	&__slider {
+		height: 646px;
+		max-width: 100%;
+	}
+	&__wrapper {
+
+	}
+	&__slide {
+		position: relative;
+		width: inherit;
+		height: inherit;
+
+	}
+
+	//End swiper slider styles
+
+
+
+
+
+
+
+
+
+
+
+
 	&__block {
 		max-width: 800px;
 		width: 100%;
