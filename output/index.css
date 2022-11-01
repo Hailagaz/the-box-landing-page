@@ -934,8 +934,8 @@ main {
   background-color: #a8b5e2;
 }
 .projects__slider {
-  height: 646px;
-  max-width: 100%;
+  max-width: 800px;
+  width: 100%;
 }
 .projects__slide {
   position: relative;

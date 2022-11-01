@@ -37,7 +37,7 @@ fetch("js/featureProjects.json").then(e=>e.json()).then(e=>{let r="";for(var o o
 const projectsBtns=document.querySelectorAll(".projects__btn");for(const a of projectsBtns)a.addEventListener("click",e=>{var t,s=e.target.dataset.index,o=document.querySelector(".projects__block.active");o.dataset.index!==s&&(t=document.querySelector(".projects__btn.active"),e.target.classList.add("active"),t.classList.remove("active"),e=document.querySelector(`.projects__block[data-index="${s}"]`),o.classList.remove("active"),e.classList.add("active"))});fetch("js/projectsCommercial.json").then(e=>e.json()).then(e=>{let t="";for(var s of e)t+=`
 				<div class="swiper-slide projects__slide projects__block" data-index="1">
 					<div class="projects__card">
-						<img class="projects__image" src="${s.image}"
+						<img class="projects__image" src="${s.photo}"
 							alt="Example of constructed building">
 						<div class="projects__info">
 							<p>${s.name}</p>

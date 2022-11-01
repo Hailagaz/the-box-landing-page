@@ -32,7 +32,7 @@ fetch("js/projectsCommercial.json")
 			slides += `
 				<div class="swiper-slide projects__slide projects__block" data-index="1">
 					<div class="projects__card">
-						<img class="projects__image" src="${project.image}"
+						<img class="projects__image" src="${project.photo}"
 							alt="Example of constructed building">
 						<div class="projects__info">
 							<p>${project.name}</p>
