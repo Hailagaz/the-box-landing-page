@@ -289,7 +289,8 @@
 						<div class="swiper-spinner">
 							<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66"
 								xmlns="http://www.w3.org/2000/svg">
-								<circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+								<circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+									r="30">
 								</circle>
 							</svg>
 						</div>
@@ -467,64 +468,72 @@
 						6391 Elgin St. Celina, Delaware 10299
 						<!-- TODO: Input button here with action - modale window-->
 					</div>
-				</div>
-				<div class="footer__phone">
-					<div class="footer__phone-head">PHONE:</div>
-					<div class="footer__phone-text">
-						<a href="tel:+84-1102-2703">+84 1102 2703</a>
+					<div class="footer__address-map" id="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d140506.4082100412!2d-75.57942043940825!3d38.906093055795296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8900000000001%3A0x710ea2348a627feb!2sSunstar%20Ayurveda!5e0!3m2!1sru!2sua!4v1667408740027!5m2!1sru!2sua"
+							allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="footer__phone">
+						<div class="footer__phone-head">PHONE:</div>
+						<div class="footer__phone-text">
+							<a href="tel:+84-1102-2703">+84 1102 2703</a>
+						</div>
+					</div>
+					<div class="footer__email">
+						<div class="footer__email-head">EMAIL:</div>
+						<div class="footer__email-text">
+							<a href="mailto: hello@thebox.com">hello@thebox.com</a>
+						</div>
+					</div>
+					<div class="footer__logotype">
+						<img src="images/logotype_01.png" alt="Footer logotype">
 					</div>
 				</div>
-				<div class="footer__email">
-					<div class="footer__email-head">EMAIL:</div>
-					<div class="footer__email-text">
-						<a href="mailto: hello@thebox.com">hello@thebox.com</a>
+				<div class="footer__feedback">
+					<div class="footer__newsletter">
+						<p>NEWSLETTER:</p>
+						<form class="footer__form" action="/backend/action_subscribe.php" method="post"
+							enctype="multipart/form-data">
+							<div class="footer__textfield">
+								<input type="email" name="email" placeholder="Your email here"
+									class="footer__textfield-input">
+							</div>
+							<div class="footer__button button">
+								<label for="button-submit" class="footer__label"
+									style="cursor: pointer">Subscribe</label>
+								<input type="submit" value="Submit" style="cursor: pointer" class="footer__load"
+									id="button-submit">
+							</div>
+						</form>
 					</div>
-				</div>
-				<div class="footer__logotype">
-					<img src="images/logotype_01.png" alt="Footer logotype">
+					<div class="footer__social">
+						<p>SOCIAL:</p>
+						<div class="footer__links">
+							<a href="https://www.facebook.com/" class="footer__link">
+								<img src="images/footer_social_facebook.png" alt="Link to our facebook page">
+							</a>
+							<a href="https://www.instagram.com/" class="footer__link">
+								<img src="images/footer_social_instagram.png" alt="Link to our instagram page">
+							</a>
+							<a href="https://twitter.com/" class="footer__link">
+								<img src="images/footer_social_twitter.png" alt="Link to our twitter page">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="footer__feedback">
-				<div class="footer__newsletter">
-					<p>NEWSLETTER:</p>
-					<form class="footer__form" action="/backend/action_subscribe.php" method="post"
-						enctype="multipart/form-data">
-						<div class="footer__textfield">
-							<input type="email" name="email" placeholder="Your email here"
-								class="footer__textfield-input">
-						</div>
-						<div class="footer__button button">
-							<label for="button-submit" class="footer__label" style="cursor: pointer">Subscribe</label>
-							<input type="submit" value="Submit" style="cursor: pointer" class="footer__load"
-								id="button-submit">
-						</div>
-					</form>
-				</div>
-				<div class="footer__social">
-					<p>SOCIAL:</p>
-					<div class="footer__links">
-						<a href="https://www.facebook.com/" class="footer__link">
-							<img src="images/footer_social_facebook.png" alt="Link to our facebook page">
-						</a>
-						<a href="https://www.instagram.com/" class="footer__link">
-							<img src="images/footer_social_instagram.png" alt="Link to our instagram page">
-						</a>
-						<a href="https://twitter.com/" class="footer__link">
-							<img src="images/footer_social_twitter.png" alt="Link to our twitter page">
-						</a>
-					</div>
-				</div>
+			<div class="footer__static">
+				<p>TheBox Company &copy; 2022. All Rights Reserved</p>
 			</div>
-		</div>
-		<div class="footer__static">
-			<p>TheBox Company &copy; 2022. All Rights Reserved</p>
-		</div>
 	</footer>
 
 	<!-- Swiper js file -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<!-- Main js file -->
 	<script src="output/index-min.js"></script>
+	<!-- <script defer
+		src="https://www.google.com.ua/maps/place/Sunstar+Ayurveda/@38.9060931,-75.5794204,11.5z/data=!4m6!3m5!1s0x89b8900000000001:0x710ea2348a627feb!8m2!3d38.9108325!4d-75.5276699!16s%2Fg%2F11pts5vsb3"></script> -->
 </body>
 
 </html>

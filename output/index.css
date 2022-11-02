@@ -273,6 +273,10 @@ input[type=submit] {
   color: #292e3d;
   cursor: pointer;
 }
+.footer__address-map {
+  height: 400px;
+  width: 100%;
+}
 .footer__phone {
   display: flex;
   flex-direction: row;
