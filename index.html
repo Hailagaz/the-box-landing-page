@@ -465,15 +465,9 @@
 				<div class="footer__address">
 					<div class="footer__address-head">ADDRESS:</div>
 					<div class="footer__address-text">
-						6391 Elgin St. Celina, Delaware 10299
-						<!-- TODO: Input button here with action - modale window-->
-					</div>
-					<div class="footer__address-map" id="map">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d140506.4082100412!2d-75.57942043940825!3d38.906093055795296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8900000000001%3A0x710ea2348a627feb!2sSunstar%20Ayurveda!5e0!3m2!1sru!2sua!4v1667408740027!5m2!1sru!2sua"
-							allowfullscreen="" loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade">
-						</iframe>
+						<a href="#popup" class="footer__address-link popup-link">
+							6391 Elgin St. Celina, Delaware 10299
+						</a>
 					</div>
 					<div class="footer__phone">
 						<div class="footer__phone-head">PHONE:</div>
@@ -528,6 +522,23 @@
 				<p>TheBox Company &copy; 2022. All Rights Reserved</p>
 			</div>
 	</footer>
+
+	<div class="popup" id="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="" class="popup__close">
+					<img src="images/popup_close.svg" alt="Close button of popup window">
+				</a>
+				<div class="popup__title">Modale window with map</div>
+				<div class="popup__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d140506.4082100412!2d-75.57942043940825!3d38.906093055795296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8900000000001%3A0x710ea2348a627feb!2sSunstar%20Ayurveda!5e0!3m2!1sru!2sua!4v1667408740027!5m2!1sru!2sua"
+						allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Swiper js file -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
