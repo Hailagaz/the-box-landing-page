@@ -9,10 +9,15 @@
 	visibility: hidden;
 	overflow-y: auto;
 	overflow-x: hidden;
+	transition: all 0.7s ease 0s;
 
 	&:target {
 		opacity: 1;
 		visibility: visible;
+		.popup__content {
+			transform: translate(0px, 0px);
+			opacity: 1;
+		}
 	}
 	&__area {
 		position: absolute;
@@ -37,6 +42,10 @@
 		max-width: 800px;
 		padding: 20px;
 		position: relative;
+
+		opacity: 0;
+		transition: all 0.7s ease 0s;
+		transform: translate(0px, -100%);
 	}
 	// .popup__close
 	&__close {

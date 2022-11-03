@@ -873,10 +873,15 @@ h3 {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
+  transition: all 0.7s ease 0s;
 }
 .popup:target {
   opacity: 1;
   visibility: visible;
+}
+.popup:target .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .popup__area {
   position: absolute;
@@ -898,6 +903,9 @@ h3 {
   max-width: 800px;
   padding: 20px;
   position: relative;
+  opacity: 0;
+  transition: all 0.7s ease 0s;
+  transform: translate(0px, -100%);
 }
 .popup__close {
   position: absolute;
