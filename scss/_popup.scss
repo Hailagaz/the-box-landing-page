@@ -11,7 +11,7 @@
 	overflow-x: hidden;
 	transition: all 0.7s ease 0s;
 
-	&:target {
+	&.open {
 		opacity: 1;
 		visibility: visible;
 		.popup__content {
@@ -19,13 +19,13 @@
 			opacity: 1;
 		}
 	}
-	&__area {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-	}
+	// &__area {
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	top: 0;
+	// 	left: 0;
+	// }
 
 	// .popup__body
 	&__body {
