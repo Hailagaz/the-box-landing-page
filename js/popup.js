@@ -3,14 +3,13 @@ const body = document.querySelector("body");
 const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
-
 const timeout = 800;
 
 if (popupLinks.length > 0) {
 	for (let i = 0; i < popupLinks.length; i++) {
 		const popupLink = popupLinks[i];
 
-		popupLink.addEventListener("click", function(e) {
+		popupLink.addEventListener("click", function (e) {
 			const popupName = popupLink.getAttribute('href').replace('#', '');
 			const currentPopup = document.getElementById(popupName);
 
@@ -23,7 +22,12 @@ if (popupLinks.length > 0) {
 }
 
 const popupCloseIcon = document.querySelectorAll(".close-popup");
-
 if (popupCloseIcon.length > 0) {
-	for (let i = 0; i < popupCloseIcon.length; i++) {}
+	for (let i = 0; i < popupCloseIcon.length; i++) {
+		const elem = popupCloseIcon[i];
+		elem.addEventListener("click", function (e) {
+			popupClose(elem.closest('.popup'));
+			e.preventDefault();
+		});
+	}
 }
