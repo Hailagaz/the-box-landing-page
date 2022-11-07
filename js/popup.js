@@ -31,3 +31,24 @@ if (popupCloseIcon.length > 0) {
 		});
 	}
 }
+
+function popupOpen(currentPopup) {
+	if (currentPopup && unlock) {
+		const popupActive = document.querySelector(".popup.open");
+
+		if (popupActive) {
+			popupClose(popupActive, false);
+		} else {
+			bodyLock();
+		}
+
+		currentPopup.classList.add('open');
+		currentPopup.addEventListener("click", function (e) {
+			if (!e.target.closest('.popup__content')) {
+				popupClose(e.target.closest('.popup'));
+			}
+		});
+	}
+}
+
+function popupClose() { }
