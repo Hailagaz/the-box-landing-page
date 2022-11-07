@@ -61,7 +61,21 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
-	
+	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+
+	for (let i = 0; i < lockPadding.length; i++) {
+		const elem = lockPadding[i];
+
+		elem.style.paddingRight = lockPaddingValue;
+	}
+
+	body.style.paddingRight = lockPaddingValue;
+	body.classList.add('lock');
+
+	unlock - false;
+	setTimeout(function () {
+		unlock = true;
+	}, timeout);
 }
 
 function bodyUnLock() { }
