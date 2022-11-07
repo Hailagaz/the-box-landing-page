@@ -80,4 +80,18 @@ function bodyLock() {
 	}, timeout);
 }
 
-function bodyUnLock() { }
+function bodyUnLock() {
+	setTimeout(function() {
+		for (let i = 0; i < lockPadding.length; i++) {
+			const elem = lockPadding[i];
+			elem.style.paddingRight = '0px';
+		}
+		body.style.paddingRight = '0px';
+		body.classList.remove('lock');
+	}, timeout);
+
+	unlock = false;
+	setTimeout(function() {
+		unlock = true;
+	}, timeout);
+}
