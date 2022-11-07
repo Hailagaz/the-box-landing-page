@@ -8,7 +8,7 @@ const concat = require('gulp-concat');
 function js() {
 	return src('js/*.js')
 		.pipe(babel())
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(concat('index-min.js'))
 		.pipe(dest('output/'));
 }
