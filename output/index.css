@@ -1,5 +1,5 @@
 .about {
-  width: 1215px;
+  width: 1216px;
   max-width: 100%;
   margin: 0 auto 200px;
   padding: 0 20px;
@@ -65,7 +65,7 @@
   height: 300px;
 }
 .ads__container {
-  width: 1215px;
+  width: 1216px;
   max-width: 100%;
   margin: 0 auto;
   padding: 100px 20px 0;
@@ -934,6 +934,10 @@ body {
   font-weight: 400;
   margin: auto;
   overflow-x: hidden;
+}
+
+.wrapper {
+  width: 1216px;
 }
 
 body._lock {

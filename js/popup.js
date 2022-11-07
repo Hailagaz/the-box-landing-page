@@ -63,16 +63,18 @@ function popupClose(popupActive, doUnlock = true) {
 function bodyLock() {
 	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
-	for (let i = 0; i < lockPadding.length; i++) {
-		const elem = lockPadding[i];
+	if (lockPadding.length > 0) {
+		for (let i = 0; i < lockPadding.length; i++) {
+			const elem = lockPadding[i];
 
-		elem.style.paddingRight = lockPaddingValue;
+			elem.style.paddingRight = lockPaddingValue;
+		}
 	}
 
 	body.style.paddingRight = lockPaddingValue;
 	body.classList.add('lock');
 
-	unlock - false;
+	unlock = false;
 	setTimeout(function () {
 		unlock = true;
 	}, timeout);

@@ -27,6 +27,10 @@ body {
 	//padding: 0 32px;
 }
 
+.wrapper {
+	width: $width_content - 2 * $padding_content;
+}
+
 body._lock {
 	overflow: hidden;
 }
