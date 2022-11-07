@@ -81,17 +81,26 @@ function bodyLock() {
 }
 
 function bodyUnLock() {
-	setTimeout(function() {
-		for (let i = 0; i < lockPadding.length; i++) {
-			const elem = lockPadding[i];
-			elem.style.paddingRight = '0px';
+	setTimeout(function () {
+		if (lockPadding.length > 0) {
+			for (let i = 0; i < lockPadding.length; i++) {
+				const elem = lockPadding[i];
+				elem.style.paddingRight = '0px';
+			}
 		}
 		body.style.paddingRight = '0px';
 		body.classList.remove('lock');
 	}, timeout);
 
 	unlock = false;
-	setTimeout(function() {
+	setTimeout(function () {
 		unlock = true;
 	}, timeout);
 }
+
+document.addEventListener('keydown', function (e) {
+	if (e.which === 27) {
+		const popupActive = document.querySelector(".popup.open");
+		popupClose(popupActive);
+	}
+});
