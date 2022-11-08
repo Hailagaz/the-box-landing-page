@@ -936,10 +936,6 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper {
-  width: 1216px;
-}
-
 body._lock {
   overflow: hidden;
 }
