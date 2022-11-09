@@ -71,7 +71,7 @@ function bodyLock() {
 		}
 	}
 
-	body.style.paddingRight = lockPaddingValue;
+	//body.style.paddingRight = lockPaddingValue;
 	body.classList.add('lock');
 
 	unlock = false;
