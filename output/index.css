@@ -261,6 +261,7 @@ input[type=submit] {
 .footer__address-head {
   width: 105px;
   max-width: 100%;
+  text-align: start;
   color: #2947a9;
   font-weight: 500;
   font-size: 20px;
@@ -283,6 +284,7 @@ input[type=submit] {
 .footer__phone-head {
   width: 105px;
   max-width: 100%;
+  text-align: start;
   color: #2947a9;
   font-weight: 500;
   font-size: 20px;
@@ -304,6 +306,7 @@ input[type=submit] {
 .footer__email-head {
   width: 105px;
   max-width: 100%;
+  text-align: start;
   color: #2947a9;
   font-weight: 500;
   font-size: 20px;
@@ -444,6 +447,9 @@ form .footer__button {
     flex-direction: column;
     align-items: center;
   }
+  .footer__address-head {
+    text-align: center;
+  }
   .footer__address-text {
     text-align: center;
   }
@@ -451,9 +457,15 @@ form .footer__button {
     flex-direction: column;
     align-items: center;
   }
+  .footer__phone-head {
+    text-align: center;
+  }
   .footer__email {
     flex-direction: column;
     align-items: center;
+  }
+  .footer__email-head {
+    text-align: center;
   }
   .footer__logotype {
     flex-direction: column;
