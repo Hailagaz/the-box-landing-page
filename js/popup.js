@@ -21,7 +21,7 @@ if (popupLinks.length > 0) {
 	}
 }
 
-const popupCloseIcon = document.querySelectorAll(".close-popup");
+const popupCloseIcon = document.querySelectorAll(".popup__close");
 if (popupCloseIcon.length > 0) {
 	for (let i = 0; i < popupCloseIcon.length; i++) {
 		const elem = popupCloseIcon[i];
