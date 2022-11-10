@@ -874,6 +874,7 @@ h3 {
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.7s ease 0s;
+  z-index: 2;
 }
 .popup.open {
   opacity: 1;
