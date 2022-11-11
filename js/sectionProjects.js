@@ -58,7 +58,7 @@ fetch("js/projectsCommercial.json")
 
 			slidesPerView: 2,
 			watchOverflow: true,
-			spaceBetween: 125,
+			spaceBetween: 100,
 			slidesPerGroup: 1,
 			centeredSlides: true,
 
