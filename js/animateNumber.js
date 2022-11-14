@@ -55,7 +55,9 @@ function windowLoad() {
 			if (entry.isIntersecting) {
 				const targetElement = entry.target;
 				const digitsCountersItems = targetElement.querySelectorAll("[data-digits-counters]");
-				if (digitsCountersItems.length) digitsCountersInit(digitsCountersItems);
+				if (digitsCountersItems.length) {
+					digitsCountersInit(digitsCountersItems);
+				}
 
 				//Turn off the observing process after actuation
 				//observer.unobserve(targetElement);
