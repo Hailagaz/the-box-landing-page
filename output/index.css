@@ -1006,13 +1006,8 @@ main {
   background-color: #a8b5e2;
 }
 .projects__slider {
-  height: 646px;
+  max-height: 100%;
   max-width: 100%;
-}
-.projects__slide {
-  position: relative;
-  width: inherit;
-  height: inherit;
 }
 .projects__block {
   max-width: 800px;
