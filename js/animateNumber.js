@@ -14,7 +14,7 @@
 // 		}
 // 	}, duration);
 // });
-
+"use strict"
 
 window.addEventListener("load", windowLoad);
 
@@ -38,7 +38,9 @@ function windowLoad() {
 			if (!startTimestamp) startTimestamp = timestamp;
 			const progress = Math.min((timestamp - startTimestamp) / duration, 1);
 			digitsCounter.innerHTML = Math.floor(progress * (startPosition + startValue));
-			if (progress < 1) window.requestAnimationFrame(step);
+			if (progress < 1) {
+				window.requestAnimationFrame(step);
+			}
 		};
 		window.requestAnimationFrame(step);
 	}
@@ -47,7 +49,7 @@ function windowLoad() {
 	//digitsCountersInit();
 
 	let options = {
-		threshold: 0.3
+		threshold: 0.1
 	}
 
 	let observer = new IntersectionObserver((entries, observer) => {
@@ -66,7 +68,7 @@ function windowLoad() {
 	}, options);
 
 	//Choose sections for observing
-	let sections = document.querySelectorAll(".observing");
+	let sections = document.querySelectorAll(".stats");
 	if (sections.length) {
 		sections.forEach(section => {
 			observer.observe(section);
