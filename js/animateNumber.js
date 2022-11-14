@@ -14,6 +14,8 @@
 // 		}
 // 	}, duration);
 // });
+
+
 "use strict"
 
 window.addEventListener("load", windowLoad);
@@ -56,7 +58,7 @@ function windowLoad() {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				const targetElement = entry.target;
-				const digitsCountersItems = targetElement.querySelectorAll("[data-digits-counters]");
+				const digitsCountersItems = targetElement.querySelectorAll("[data-digits-counter]");
 				if (digitsCountersItems.length) {
 					digitsCountersInit(digitsCountersItems);
 				}
@@ -68,7 +70,7 @@ function windowLoad() {
 	}, options);
 
 	//Choose sections for observing
-	let sections = document.querySelectorAll(".stats");
+	let sections = document.querySelectorAll(".observing");
 	if (sections.length) {
 		sections.forEach(section => {
 			observer.observe(section);
