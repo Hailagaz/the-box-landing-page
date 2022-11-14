@@ -16,15 +16,6 @@
 // });
 
 
-
-
-
-//Version 2
-
-//page__section -> stats
-//data-digits-counter -> data-val
-//page__counter -> stats__counter
-
 window.addEventListener("load", windowLoad);
 
 function windowLoad() {
@@ -54,4 +45,29 @@ function windowLoad() {
 
 	//Start when page loaded
 	//digitsCountersInit();
+
+	let options = {
+		threshold: 0.3
+	}
+
+	let observer = new IntersectionObserver((entries, observer) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				const targetElement = entry.target;
+				const digitsCountersItems = targetElement.querySelectorAll("[data-digits-counters]");
+				if (digitsCountersItems.length) digitsCountersInit(digitsCountersItems);
+
+				//Turn off the observing process after actuation
+				//observer.unobserve(targetElement);
+			}
+		});
+	}, options);
+
+	//Choose sections for observing
+	let sections = document.querySelectorAll(".observing");
+	if (sections.length) {
+		sections.forEach(section => {
+			observer.observe(section);
+		});
+	}
 }
