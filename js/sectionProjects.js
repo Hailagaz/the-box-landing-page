@@ -99,3 +99,32 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 });
 
+
+
+
+// for (let project of data) {
+// 	slides += `
+// 		<!--<div class="swiper-slide projects__slide projects__block" data-index="1">-->
+// 			<div class="projects__card">
+// 				<img class="projects__image" src="${project.photo}"
+// 					alt="Example of constructed building">
+// 				<div class="projects__info">
+// 					<p>${project.name}</p>
+// 					<p>${project.location}</p>
+// 				</div>
+// 			</div>
+// 		<!--</div>-->
+// 	`;
+// }
+
+// document.querySelector('.projects__slider1').innerHTML = `
+// 	<div class="swiper-wrapper projects__wrapper">
+// 		<div class="swiper-slide projects__slide projects__block" data-index="1">
+// 			${slides}
+// 		</div>
+// 	  </div>
+// 	  <!--  -->
+// 	  <div class="swiper-pagination"></div>
+// 	  <!-- <div class="swiper-button-prev"></div> -->
+// 	  <!-- <div class="swiper-button-next"></div> -->
+// `;
