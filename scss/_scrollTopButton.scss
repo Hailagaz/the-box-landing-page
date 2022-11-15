@@ -8,12 +8,10 @@
 .showbutton {
 	opacity: 1;
 	transition: 0.5s;
-
 	&__hidden {
 		opacity: 0;
 	}
 }
-
 .showbutton:hover {
 	transform: scale(1.1);
 	transition: transform 0.25s;

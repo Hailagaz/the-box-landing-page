@@ -4,7 +4,6 @@ $duration: 1.4s;
 .spinner {
 	animation: rotator $duration linear infinite;
 }
-
 @keyframes rotator {
 	0% {
 		transform: rotate(0deg);
@@ -13,14 +12,12 @@ $duration: 1.4s;
 		transform: rotate(270deg);
 	}
 }
-
 .path {
 	stroke-dasharray: $offset;
 	stroke-dashoffset: 0;
 	transform-origin: center;
 	animation: dash $duration ease-in-out infinite, colors ($duration * 4) ease-in-out infinite;
 }
-
 @keyframes colors {
 	0% {
 		stroke: #4285f4;

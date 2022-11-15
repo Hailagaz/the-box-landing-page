@@ -1,3 +1,4 @@
+@import "_nulling.scss";
 @import "_buttons.scss";
 @import "_links.scss";
 @import "_spinner.scss";
@@ -7,35 +8,20 @@
 @import "_scrollTopButton.scss";
 @import "_popup.scss";
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 html,
 body {
 	scroll-behavior: smooth;
 }
-
 body {
 	font-family: 'Work Sans', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	margin: auto;
 	overflow-x: hidden;
-	//padding: 0 32px;
 }
-
-// .wrapper {
-// 	width: $width_content - 2 * $padding_content;
-// }
-
 body._lock {
 	overflow: hidden;
 }
-
 main {
 	margin: 0px auto 0px auto;
-	padding: 0;
 }
