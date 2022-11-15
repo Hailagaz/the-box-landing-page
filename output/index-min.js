@@ -35,25 +35,25 @@ document.addEventListener("DOMContentLoaded",()=>{fetch("js/featureProjects.json
 		  <!-- <div class="swiper-button-prev"></div> -->
 		  <!-- <div class="swiper-button-next"></div> -->
 	`;new Swiper(".swiper",{loop:!0,slidesPerView:1,watchOverflow:!0,spaceBetween:125,slidesPerGroup:1,centeredSlides:!0,effect:"coverflow",coverflowEffect:{rotate:0,slideShadows:!1,scale:1},slideToClickedSlide:!0,keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},mousewheel:{sensitivity:1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".hero__button-next",prevEl:".hero__button-prev"}})}).catch(e=>{document.querySelector(".swiper").innerHTML="<p>Sorry, we have some problems. We will fix them soon.</p>"})});
-const projectsBtns=document.querySelectorAll(".projects__btn");for(const a of projectsBtns)a.addEventListener("click",e=>{var t,s=e.target.dataset.index,o=document.querySelector(".projects__block.active");o.dataset.index!==s&&(t=document.querySelector(".projects__btn.active"),e.target.classList.add("active"),t.classList.remove("active"),e=document.querySelector(`.projects__block[data-index="${s}"]`),o.classList.remove("active"),e.classList.add("active"))});fetch("js/projectsCommercial.json").then(e=>e.json()).then(e=>{let t="";for(var s of e)t+=`
-				<!--<div class="swiper-slide projects__slide projects__block" data-index="1">-->
-					<div class="projects__card">
-						<img class="projects__image" src="${s.photo}"
-							alt="Example of constructed building">
-						<div class="projects__info">
-							<p>${s.name}</p>
-							<p>${s.location}</p>
+document.addEventListener("DOMContentLoaded",()=>{for(const e of document.querySelectorAll(".projects__btn"))e.addEventListener("click",e=>{var t,s=e.target.dataset.index,o=document.querySelector(".projects__block.active");o.dataset.index!==s&&(t=document.querySelector(".projects__btn.active"),e.target.classList.add("active"),t.classList.remove("active"),e=document.querySelector(`.projects__block[data-index="${s}"]`),o.classList.remove("active"),e.classList.add("active"))});fetch("js/projectsCommercial.json").then(e=>e.json()).then(e=>{let t="";for(var s of e)t+=`
+					<!--<div class="swiper-slide projects__slide projects__block" data-index="1">-->
+						<div class="projects__card">
+							<img class="projects__image" src="${s.photo}"
+								alt="Example of constructed building">
+							<div class="projects__info">
+								<p>${s.name}</p>
+								<p>${s.location}</p>
+							</div>
 						</div>
+					<!--</div>-->
+				`;document.querySelector(".projects__slider1").innerHTML=`
+				<div class="swiper-wrapper projects__wrapper">
+					<div class="swiper-slide projects__slide projects__block" data-index="1">
+						${t}
 					</div>
-				<!--</div>-->
-			`;document.querySelector(".projects__slider1").innerHTML=`
-			<div class="swiper-wrapper projects__wrapper">
-				<div class="swiper-slide projects__slide projects__block" data-index="1">
-					${t}
-				</div>
-		  	</div>
-		  	<!--  -->
-		  	<div class="swiper-pagination"></div>
-		  	<!-- <div class="swiper-button-prev"></div> -->
-		  	<!-- <div class="swiper-button-next"></div> -->
-		`;new Swiper(".projects__slider1",{loop:!0,slidesPerView:2,watchOverflow:!0,spaceBetween:100,slidesPerGroup:1,centeredSlides:!0,effect:"coverflow",coverflowEffect:{rotate:0,slideShadows:!1,scale:1},slideToClickedSlide:!0,keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},mousewheel:{sensitivity:1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".projects__button-next",prevEl:".projects__button-prev"}})}).catch(e=>{document.querySelector(".projects__slider1").innerHTML="<p>Sorry, we have some problems. We will fix them soon.</p>"});
+				  </div>
+				  <!--  -->
+				  <div class="swiper-pagination"></div>
+				  <!-- <div class="swiper-button-prev"></div> -->
+				  <!-- <div class="swiper-button-next"></div> -->
+			`;new Swiper(".projects__slider1",{loop:!0,slidesPerView:2,watchOverflow:!0,spaceBetween:100,slidesPerGroup:1,centeredSlides:!0,effect:"coverflow",coverflowEffect:{rotate:0,slideShadows:!1,scale:1},slideToClickedSlide:!0,keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},mousewheel:{sensitivity:1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".projects__button-next",prevEl:".projects__button-prev"}})}).catch(e=>{document.querySelector(".projects__slider1").innerHTML="<p>Sorry, we have some problems. We will fix them soon.</p>"})});
